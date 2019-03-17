@@ -1,8 +1,8 @@
 # taskmanager
 test-task
 
-#Docker challenge:
+#Challenges
 
-1. Clone this repo and follow the instructions in docker-linux-ansible  readme file to start installation of docker in ubuntu VM
+>> Clone this repo and follow the instructions in readme file's to start testing.
 
 
