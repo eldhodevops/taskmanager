@@ -1,8 +1,8 @@
 # taskmanager
 test-task
 
-Clone the repo:
-```
-sudo docker-compose up
-```
-Open the browser at http://localhost:8080 and have fun!
+#Docker challenge:
+
+1. Clone this repo and follow the instructions in docker-linux-ansible  readme file to start installation of docker in ubuntu VM
+
+
