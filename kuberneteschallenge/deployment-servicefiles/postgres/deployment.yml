@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: postgres
+  labels:
+    app: postgres
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:9.3 #eldhodoc/postgres
+          env:
+            - name: "POSTGRES_DB"
+              value: "tasks_db"
+            - name: "POSTGRES_PASSWORD"
+              value: "t4sk"
+            - name: "POSTGRES_USER"
+              value: "task"
+          ports:
+            - name: postgres
+              containerPort: 5432
+          
