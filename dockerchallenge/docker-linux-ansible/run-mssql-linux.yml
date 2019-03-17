@@ -1,0 +1,10 @@
+- name: Install mssql on Linux nodes
+  hosts: node-linux
+ # environment: "{{ env_vars|default({}) }}"
+  gather_facts: yes
+  become: yes
+  tasks:
+    - import_role:
+        name: mssql
+      tags:
+        - linux::mssql

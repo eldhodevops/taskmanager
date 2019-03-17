@@ -1,0 +1,4 @@
+ansible_user: eldho
+# Ensure you don't have ansible_ssh_pass var set in your own group_vars/all.yml, it will overwrite this.
+ansible_password: eldho
+ansible_port: 22
