@@ -1,6 +1,8 @@
 # docker-linux-ansible
 Install docker  on Linux flavors using ansible
 
+Clone this repo and follow the instruction to install docker 
+
 #I used Ubuntu 18.04 with oracle virtual box
 
 ```
