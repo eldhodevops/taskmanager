@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: damianofds
+  labels:
+    app: damianofds
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: damianofds
+  template:
+    metadata:
+      labels:
+        app: damianofds
+    spec:
+      containers:
+        - name: damianofds
+          image: damianofds/web:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
