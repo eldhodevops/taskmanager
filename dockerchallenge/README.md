@@ -5,5 +5,6 @@
 ```
 docker-compose up
 ```
+Output that I achieved are shared on directory "screenshotsresults", please refer
 
 Thats it :)
